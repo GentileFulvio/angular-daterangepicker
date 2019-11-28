@@ -3,7 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {CalendarModule} from 'projects/calendar/src/public-api';
+import {CalendarModule} from '@calendar/module';
 
 @NgModule({
 	declarations: [AppComponent],
@@ -16,6 +16,6 @@ import {CalendarModule} from 'projects/calendar/src/public-api';
 })
 export class AppModule {
 	constructor() {
-		moment.locale('nl');
+		moment.locale('en');
 	}
 }

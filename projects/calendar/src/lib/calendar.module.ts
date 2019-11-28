@@ -4,7 +4,9 @@ import {BrowserModule} from '@angular/platform-browser';
 import {CalendarComponent} from './containers/calendar/calendar.component';
 
 @NgModule({
-	declarations: [CalendarComponent],
+	declarations: [
+		CalendarComponent
+	],
 	imports: [
 		BrowserModule
 	],

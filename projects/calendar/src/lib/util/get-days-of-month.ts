@@ -3,8 +3,8 @@ import * as moment from 'moment';
 export const getDaysOfMonth = (month: string): string[][] => {
 	const monthMoment = moment(month, 'YYYY-MM');
 
-	const dayOfTheWeek = monthMoment.clone().startOf('month').get('day');
-	const currentDay = monthMoment.clone().subtract(dayOfTheWeek - 1, 'days');
+	const dayOfTheWeek = monthMoment.clone().startOf('month').weekday();
+	const currentDay = monthMoment.clone().subtract(dayOfTheWeek, 'days');
 
 	const result: string[][] = [];
 

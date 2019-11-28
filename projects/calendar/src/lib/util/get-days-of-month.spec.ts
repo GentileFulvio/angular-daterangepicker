@@ -2,7 +2,6 @@ import {getDaysOfMonth} from './get-days-of-month';
 
 it('should return every week with correct days of the month', async () => {
 	const month = '2019-11';
-
 	const result = getDaysOfMonth(month);
 
 	await expect(result).toEqual([
