@@ -1,1 +1,8 @@
-<p>calendar works!</p>
+<ng-container
+	*ngIf="weeks">
+	<div *ngfor="let week of weeks">
+		<div *ngFor="let day of weeks">
+			{{day}}
+		</div>
+	</div>
+</ng-container>
