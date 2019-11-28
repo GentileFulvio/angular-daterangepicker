@@ -1,7 +1,13 @@
+<div>
+	<div *ngFor="let weekday of weekdays">
+		{{weekday}}
+	</div>
+</div>
+
 <ng-container
 	*ngIf="weeks">
-	<div *ngfor="let week of weeks">
-		<div *ngFor="let day of weeks">
+	<div *ngFor="let week of weeks">
+		<div *ngFor="let day of week">
 			{{day}}
 		</div>
 	</div>

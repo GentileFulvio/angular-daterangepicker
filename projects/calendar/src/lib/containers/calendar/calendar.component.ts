@@ -1,5 +1,6 @@
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
-import {getDaysOfMonth} from '../../util';
+
+import {getDaysOfMonth, getWeekdays} from '../../util';
 
 @Component({
 	selector: 'lib-calendar',
@@ -8,6 +9,7 @@ import {getDaysOfMonth} from '../../util';
 })
 export class CalendarComponent implements OnChanges {
 	@Input() month: string;
+	weekdays: string[] = getWeekdays();
 	weeks: string[][];
 
 	ngOnChanges(changes: SimpleChanges): void {

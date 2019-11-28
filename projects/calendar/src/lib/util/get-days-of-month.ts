@@ -1,7 +1,6 @@
 import * as moment from 'moment';
 
 export const getDaysOfMonth = (month: string): string[][] => {
-	moment.updateLocale('nl');
 	const monthMoment = moment(month, 'YYYY-MM');
 
 	const dayOfTheWeek = monthMoment.clone().startOf('month').get('day');
@@ -9,7 +8,7 @@ export const getDaysOfMonth = (month: string): string[][] => {
 
 	const result: string[][] = [];
 
-	for (let i = 0; i < 6; i++) {
+	for (let i = 0; i <= 6; i++) {
 		const days: string[] = [];
 
 		for (let j = 0; j <= 6; j++) {
